@@ -1,0 +1,57 @@
+.app {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  .layout-main {
+    .layout-header {
+      height: 64px;
+      background-color: #242424;
+      > div {
+        position: absolute;
+        height: 64px;
+        margin: 0 128px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+      .logo {
+        width: 160px;
+        height: 100%;
+        background: url('./assets/topbar.png') no-repeat;
+        background-position: 0 -4px;
+        margin-right: 48px;
+        float: left;
+      }
+      .menu {
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid red;
+      }
+      .action {
+        width: 240px;
+        height: 100%;
+        float: right;
+        margin-left: 48px;
+        text-align: right;
+        border: 1px solid red;
+      }
+    }
+    .layout-content {
+      padding: 0 200px;
+      overflow: auto;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      .layout-footer {
+        margin-top: 48px;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}
